@@ -18,12 +18,10 @@ export class QrCodeScanner extends Component {
     this.openImageDialog = this.openImageDialog.bind(this);
   }
   handleScan(result) {
-    this.state.error = result ? "" : "QR Code Not found"
+    this.setState({result, error:result ? "" : "QR Code Not found"})
   }
   handleError(e) {
-    this.state.error = e.message
-    this.state.legacyMode = true
-
+    this.setState({error:e.message, legacyMode:true})
   }
   openImageDialog() {
     this.state.ref.current.openImageDialog()
