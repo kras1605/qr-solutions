@@ -15,7 +15,7 @@ const Index = (props) => {
     router.pathname.includes(['/404', '/500']) ? <Component {...pageProps} /> : <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-700 via-orange-300 to-rose-800 text-text-main min-h-screen min-w-full w-full overflow-x-hidden flex flex-col">
+      className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-700 via-orange-400 to-rose-600 text-text-main min-h-screen min-w-full w-full overflow-x-hidden flex flex-col">
       <NextNProgress
         color="#dd6b59"
         height={2}
